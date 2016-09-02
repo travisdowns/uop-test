@@ -1,0 +1,10 @@
+A quick test of uop-fusion on Intel x64. Origianlly created by Peter Cordes here:
+
+http://stackoverflow.com/a/31027695/149138
+
+To make and run tests:
+
+make
+
+Currently uses the Skylake events, but it seems like the counters are mostly unchanged on recent archs, so just try
+it on whatever arch. Alternately, you can get the event masks using `ocperf.py list` and `ocperf.py --print stat -e <event>`. 
